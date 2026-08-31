@@ -31,24 +31,14 @@ func printFunc(test int) int {
 }
 
 // Fibonacci with Recursion
-func fibonacci(num int) int{
+func fibonacci(num int) int {
 	if num == 0 {
 		return 0
-	} else if num == 1 || num == 2{
+	} else if num == 1 || num == 2 {
 		return 1
 	} else {
-		return (fibonacci(num-1)+ fibonacci(num-2))
+		return (fibonacci(num-1) + fibonacci(num-2))
 	}
 }
 
-func main() {
-	n := 5
-	fmt.Println("The sum of numbers are", sum(n))
-	fmt.Println("The factorial of numbers are", fact(n))
-	printFunc(n)
-	println(" ")
-	print("Fibonacci series of number 5 is: ")
-	for i := 0; i < n; i++ {
-		print(fibonacci(i), " ")
-	}
-}
+
