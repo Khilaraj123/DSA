@@ -40,5 +40,3 @@ func fibonacci(num int) int {
 		return (fibonacci(num-1) + fibonacci(num-2))
 	}
 }
-
-
