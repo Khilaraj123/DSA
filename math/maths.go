@@ -46,3 +46,29 @@ func closestNumber(n, m int) int {
 	}
 	return closest
 }
+
+// Express a number as sum of consecutive numbers
+// Given a positive integer n,
+// find whether it can be represented as the sum of two or more consecutive positive integers.
+func isSumofConsecutiveNumbers(n int) bool {
+	if n <= 0 {
+		return false
+	}
+
+	for start := 1; start < n; start++ {
+		sum := 0
+
+		for end := start; sum < n; end++ {
+			sum += end
+
+			if sum == n && end > 1 {
+				return true
+			}
+
+			if sum > n {
+				break
+			}
+		}
+	}
+	return false
+}

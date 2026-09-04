@@ -25,6 +25,12 @@ func main() {
 	println("The sum is: ", findSum(n))
 	println("The sum by another method is: ", findSum2(n))
 
-	a, b:= 10, 15
+	a, b := 10, 15
 	println("The closest number to", a, "and divisible by", b, "is:", closestNumber(a, b))
+
+	if isSumofConsecutiveNumbers(n) {
+		println("true")
+	} else {
+		println("false")
+	}
 }
