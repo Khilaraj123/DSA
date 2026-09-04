@@ -33,4 +33,10 @@ func main() {
 	} else {
 		println("false")
 	}
+
+	//From pattern.go
+	rows, cols := 5, 5
+	rect(rows, cols)
+	triangle(rows)
+	hollowRect(rows, cols)
 }
